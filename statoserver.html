@@ -520,7 +520,7 @@
             statusDetails.textContent = 'Stiamo verificando la connessione al server';
 
             // Check server status
-            fetch("https://mc-api.net/v3/server/ping/planetmc.mcsh.io")
+            fetch("https://mc-api.net/v3/server/ping/planetmc.giize.com")
                 .then(response => response.json())
                 .then(data => {
                     if (data.online) {
@@ -549,7 +549,7 @@
 
         // Copy IP to clipboard
         function copyToClipboard() {
-            const ip = 'planetmc.mcsh.io';
+            const ip = 'planetmc.giize.com';
             navigator.clipboard.writeText(ip).then(() => {
                 const tooltip = document.getElementById('copy-tooltip');
                 tooltip.textContent = 'IP Copiato!';
